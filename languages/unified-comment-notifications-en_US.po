@@ -1,0 +1,126 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Unified Comment Notifications v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-01-14 23:00:51+0000\n"
+"Last-Translator: jmdodd <jmdodd@offbeatempire.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: unified-comment-notifications.php:0
+#@ unified-comment-notifications
+msgid "Unified Comment Notifications"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: unified-comment-notifications.php:0
+#@ unified-comment-notifications
+msgid "Allow site visitors to follow comments and manage their follows."
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: unified-comment-notifications.php:0
+#@ unified-comment-notifications
+msgid "Jennifer M. Dodd"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: unified-comment-notifications.php:0
+#@ unified-comment-notifications
+msgid "http://uncommoncontent.com/"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: unified-comment-notifications.php:0
+#@ unified-comment-notifications
+msgid "1.0"
+msgstr ""
+
+#: unified-comment-notifications.php:124
+#: unified-comment-notifications.php:207
+#@ unified-comment-notifications
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: unified-comment-notifications.php:142
+#@ unified-comment-notifications
+msgid "Invalid action specified."
+msgstr ""
+
+#: unified-comment-notifications.php:148
+#@ unified-comment-notifications
+msgid "No action specified."
+msgstr ""
+
+#: unified-comment-notifications.php:165
+#: unified-comment-notifications.php:215
+#@ unified-comment-notifications
+msgid "No post id specified."
+msgstr ""
+
+#: unified-comment-notifications.php:284
+#, php-format
+#@ unified-comment-notifications
+msgid "New comment posted on '%s'"
+msgstr "[Offbeat Bride Tribe] New Comment On: %s"
+
+#: unified-comment-notifications.php:298
+#, php-format
+#@ unified-comment-notifications
+msgid "<p><a href='%s'>Unsubscribe</a> from comment notifications on <a href='%s'>%s</a>.<br />"
+msgstr "<br /><br /><br /><br /><p><a href='%s'>Click here</a> to stop following comments on this post.<br />"
+
+#: unified-comment-notifications.php:464
+#, php-format
+#@ unified-comment-notifications
+msgid "You are subscribed to comments on this post | <a href='%s'>Unsubscribe</a>"
+msgstr "<a href='%s'>Unfollow</a>"
+
+#: unified-comment-notifications.php:470
+#, php-format
+#@ unified-comment-notifications
+msgid "<a href='%s'>Subscribe</a>"
+msgstr "<a href='%s'>Follow comments</a>"
+
+#: unified-comment-notifications.php:287
+#, php-format
+#@ unified-comment-notifications
+msgid "<p>A new comment has been posted on <a href='%s'>%s</a>.</p>"
+msgstr "<p>There is a new comment on <a href='%s'>%s</a>.</p>"
+
+#: unified-comment-notifications.php:291
+#, php-format
+#@ unified-comment-notifications
+msgid "<p>Author: %s<br />Comment:</p>%s"
+msgstr ""
+
+#: unified-comment-notifications.php:295
+#, php-format
+#@ unified-comment-notifications
+msgid "<p>See all comments on this post:<br />%s</p>"
+msgstr "--------<br><p>See all comments on this post here:<br />%s</p>"
+
+#: unified-comment-notifications.php:303
+#, php-format
+#@ unified-comment-notifications
+msgid "<a href='%s'>Unsubscribe</a> from <strong>all</strong> comment notifications.</p>"
+msgstr "-----<br>PS: Alternately, you can <a href='%s'>click here</a> to unfollow <strong>all</strong> journal comment notifications on <strong>all</strong> journals. (Warning: there's no undo!)</p>"
+
+#: unified-comment-notifications.php:506
+#@ unified-comment-notifications
+msgid "Subscribe to comments on this post"
+msgstr "Follow comments on this journal entry"
+
