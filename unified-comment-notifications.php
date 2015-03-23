@@ -42,7 +42,7 @@ class UCC_Unified_Comment_Notifications {
 
 	public function __construct() {
 		self::$instance = $this;
-		$this->version = '2013010703';
+		$this->version = '20150101';
 		$this->version = time();
 		
 		// Useful pathinfo
@@ -500,8 +500,8 @@ class UCC_Unified_Comment_Notifications {
 		$_post   = get_post( $post_id );
 
 		// Author is viewing
-//		if ( $_post->post_author == $user_id )
-//			return;
+		if ( $_post->post_author == $user_id )
+			return;
 
 		$checked = apply_filters( 'ucc_ucn_checkbox_is_checked', $this->is_subscribed( $user_id, $post_id ) );
 		if ( $options['always_checked'] )
