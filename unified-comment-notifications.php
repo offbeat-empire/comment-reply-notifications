@@ -247,6 +247,10 @@ class UCC_Unified_Comment_Notifications {
 		if ( !$comment )
 			return;
 
+		//get comment text
+		$comment_text = apply_filters( 'comment_text', get_comment_text( $comment->comment_ID ) );
+
+
 		// Check comment type
 		if ( '' != $comment->comment_type )
 			return;
@@ -274,6 +278,8 @@ class UCC_Unified_Comment_Notifications {
 				// Do nothing.
 			} elseif ( $comment->user_id == $subscriber_id ) {
 				// Do nothing.
+			} elseif ( array_key_exists($subscriber_id, bp_activity_find_mentions( $comment_text ) ) ) {
+				//@mention handler will get it, do nothing
 			} else {
 				// Get userdata
 				$user = get_userdata( $subscriber_id );
@@ -296,7 +302,7 @@ class UCC_Unified_Comment_Notifications {
 				);
 				$message .= sprintf( __( "<p>Author: %s<br />Comment:</p>%s", 'unified-comment-notifications' ),
 					$comment->comment_author,
-					apply_filters( 'comment_text', get_comment_text( $comment->comment_ID ) )
+					$comment_text
 				);
 				$message .= sprintf( __( "<p>See all comments on this post:<br />%s</p>", 'unified-comment-notifications' ),
 					$permalink . '#comments'
